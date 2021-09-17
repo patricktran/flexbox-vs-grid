@@ -1,0 +1,45 @@
+/*******************************
+Example 1
+********************************/
+
+.flex-container-ex1 {
+  padding: 2rem;
+
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-container-ex1 > .cell {
+  background-color: forestgreen;
+  padding: 1rem;
+
+  /* needed to tell each flex item to take as much space as possible */
+  flex-grow: 1;
+}
+
+.flex-container-ex1 > .cell:nth-child(2){
+    /* target 2nd item to be twice as wide */
+    /* notice for this use case, flexbox isn't as concise as grid*/
+    flex-grow: 2;
+}
+
+/*******************************
+Example 2 - CONTENT shapes the LAYOUT
+********************************/
+
+.flex-container-ex2,
+.flex-container-ex {
+    padding: 2rem;
+  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .flex-container-ex2 > .cell {
+    background-color: forestgreen;
+    padding: 1rem;
+  
+    /* needed to tell each flex item to take as much space as possible */
+    flex-grow: 1;
+  }

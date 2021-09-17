@@ -1,0 +1,55 @@
+/*******************************
+Example 1
+********************************/
+
+.grid-container-ex1 {
+  padding: 2rem;
+
+  display: grid;
+  /* second item is twice as wide as other items. fr unit is a 'fraction' */
+  grid-template-columns: 1fr 2fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr;*/
+  grid-gap: 1rem;
+}
+
+.grid-container-ex1 > .cell {
+  background-color: forestgreen;
+  padding: 1rem;
+}
+
+/*******************************
+Example 2 - LAYOUT shapes the CONTENT
+********************************/
+
+.grid-container-ex2 {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.grid-container-ex2 > .cell {
+  background-color: forestgreen;
+  padding: 1rem;
+}
+
+
+/*******************************
+Example 3 - Responsive Layouts
+Grid’s auto-fit() and minmax() functions to give us a fully responsive layout without the need for media queries
+However, you may still find the need to use media queries when you want full control
+********************************/
+
+.grid-container-ex3 {
+    padding: 2rem;
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr;*/ /* This says to use 3 columns regardless of viewport size */
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); /* This says to use as many columns as possible, but with min of 20rems  */
+    grid-gap: 1rem;
+  }
+  
+  .grid-container-ex3 > .cell {
+    background-color: forestgreen;
+    padding: 1rem;
+  }
+  
