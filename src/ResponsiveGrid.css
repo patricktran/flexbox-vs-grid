@@ -17,7 +17,7 @@
   .responsive-grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr; /* 7 rows */
-    grid-template-areas:
+    grid-template-areas: /* change/reposition layout */
       "nav"
       "sidebar"
       "main"

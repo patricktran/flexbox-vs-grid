@@ -1,6 +1,8 @@
 # Flexbox vs CSS Grid
 
-> Summary:  As we’ve seen in the examples, Grid is not a replacement for flexbox. Both of them co-exist quite happily, and knowing when to use each of them gives even more power to your layouts!
+> Summary:  As we’ve seen in these examples, Grid is not a replacement for flexbox. Both of them co-exist quite happily, and knowing when to use each of them gives even more power to your layouts!
+
+![screenshot](/screenshot.png?raw=true)
 
 References:  
 https://css-tricks.com/snippets/css/complete-guide-grid/

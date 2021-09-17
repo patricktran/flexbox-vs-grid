@@ -21,7 +21,9 @@
   .item-1 {
     /*this particular item will start at column 1 and span 2 columns */
     grid-column: 1 / span 2;
-    /*grid-column: span 2; same effect */
+    /*grid-column: span 2; same effect - span 2 columns */
+    /*grid-row: span 3; span 3 rows */
+    /*the above is shorthand for... grid-column-start, grid-column-end, grid-row-start, grid-row-end*/
   }
 
   .item-1 h1 {
