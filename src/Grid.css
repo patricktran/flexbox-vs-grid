@@ -6,7 +6,7 @@ Example 1
   padding: 2rem;
 
   display: grid;
-  /* second item is twice as wide as other items. fr unit is a 'fraction' */
+  /* second item is twice as wide as other items. fr unit is a 'fraction'. 1fr=25% of the available space */
   grid-template-columns: 1fr 2fr 1fr;
   /* grid-template-columns: 1fr 1fr 1fr;*/
   grid-gap: 1rem;
